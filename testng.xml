@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite1" verbose="1" thread-count="3" parallel="tests">
+    <test name="GitHub" thread-count="4" parallel="methods">
+        <parameter name="browser" value="CHROME" />
+        <packages>
+            <package name="com.rest.tests"/>
+        </packages>
+    </test>
+</suite>
